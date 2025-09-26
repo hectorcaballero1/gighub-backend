@@ -49,15 +49,4 @@ public class Artist extends User {
     @Column(name = "youtube_url", length = 500)
     @Size(max = 5, message = "Maximum 5 YouTube URLs allowed")
     private List<@Size(max = 500, message = "YouTube URL must not exceed 500 characters") String> youtubeUrls = new ArrayList<>();
-
-    @NotNull(message = "Rating average is required")
-    @DecimalMin(value = "0.0", message = "Rating average must be at least 0.0")
-    @DecimalMax(value = "5.0", message = "Rating average must not exceed 5.0")
-    @Column(name = "rating_average", nullable = false, precision = 2, scale = 1)
-    private Double ratingAverage = 0.0;
-
-    @NotNull(message = "Rating count is required")
-    @Min(value = 0, message = "Rating count must be at least 0")
-    @Column(name = "rating_count", nullable = false)
-    private Integer ratingCount = 0;
 }

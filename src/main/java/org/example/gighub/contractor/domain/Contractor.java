@@ -32,15 +32,4 @@ public class Contractor extends User {
     @Size(max = 20, message = "Phone must not exceed 20 characters")
     @Column(length = 20)
     private String phone;
-
-    @NotNull(message = "Rating average is required")
-    @DecimalMin(value = "0.0", message = "Rating average must be at least 0.0")
-    @DecimalMax(value = "5.0", message = "Rating average must not exceed 5.0")
-    @Column(name = "rating_average", nullable = false, precision = 2, scale = 1)
-    private Double ratingAverage = 0.0;
-
-    @NotNull(message = "Rating count is required")
-    @Min(value = 0, message = "Rating count must be at least 0")
-    @Column(name = "rating_count", nullable = false)
-    private Integer ratingCount = 0;
 }

@@ -1,12 +1,12 @@
 # **GigHub**
 
-**Plataforma que conecta bandas/artistas emergentes con quienes necesitan música en vivo**
+**Plataforma que conecta artistas emergentes con quienes necesitan música en vivo**
 
 ## **Descripción del Proyecto**
 
-GigHub es una plataforma web que conecta bandas emergentes con cualquier persona que necesite música en vivo: bares, clubes, centros culturales, cumpleaños, bodas, eventos corporativos, etc.
+GigHub es una plataforma web que conecta artistas emergentes con cualquier persona que necesite música en vivo: bares, clubes, centros culturales, cumpleaños, bodas, eventos corporativos, etc.
 
-La plataforma permite que los contratantes publiquen sus necesidades con información específica (fecha, horario, tipo de evento, presupuesto), mientras que las bandas pueden explorar estas oportunidades, postularse, y ser seleccionadas.
+La plataforma permite que los contratantes publiquen sus necesidades con información específica (fecha, horario, tipo de evento, presupuesto), mientras que los artistas pueden explorar estas oportunidades, postularse, y ser seleccionados.
 
 ## **Funcionalidades del Proyecto**
 
@@ -16,7 +16,7 @@ La plataforma permite que los contratantes publiquen sus necesidades con informa
 
 * Registro simple: "¿Eres músico?" Sí/No
 * Si No → Perfil de Contratante
-* Si Sí → Perfil de Banda
+* Si Sí → Perfil de Artista
 * Campos básicos: nombre, email, contraseña
 * Login con email/contraseña
 
@@ -27,11 +27,11 @@ La plataforma permite que los contratantes publiquen sus necesidades con informa
 
 ### **2\. Perfiles de Usuario**
 
-**MVP \- Perfil de Banda:**
+**MVP \- Perfil de Artista:**
 
 * Foto de perfil
 * Foto de portada
-* Nombre y descripción de la banda
+* Nombre y descripción del artista
 * Género musical
 * 1 link de YouTube (embed del reproductor)
 * Información de contacto (email/teléfono)
@@ -47,15 +47,15 @@ La plataforma permite que los contratantes publiquen sus necesidades con informa
 * Rating promedio
 * Historial/Reseñas: Lista de eventos realizados con ratings recibidos
 
-**Extra (Pro) \- Perfil de Banda/Artista:**
+**Extra (Pro) \- Perfil de Artista:**
 
 * 5 links de videos de YouTube
-* Fotos adicionales de la banda
+* Fotos adicionales del artista
 * Información de contacto destacada
 
-**Extra (Pro) \- Perfil de Contratante/Venue:**
+**Extra (Pro) \- Perfil de Contratante:**
 
-* Información detallada del local (si es venue)
+* Información detallada del local (si es contratante de venue)
 * Ubicación específica
 * Fotos del espacio/escenario
 
@@ -81,16 +81,16 @@ La plataforma permite que los contratantes publiquen sus necesidades con informa
 
 **MVP:**
 
-* Bandas/Artistas exploran eventos disponibles
+* Artistas exploran eventos disponibles
 * Filtros básicos: fecha y género musical
 * Máximo 5 postulaciones al mes (free)
 * Postulación con un clic
-* Contratante ve lista de bandas postuladas
-* Bandas Pro aparecen primero en la lista
-* Contratante selecciona una banda
-* Notificación por email a la banda seleccionada
+* Contratante ve lista de artistas postulados
+* Artistas Pro aparecen primero en la lista
+* Contratante selecciona un artista
+* Notificación por email al artista seleccionado
 
-**Extra (Pro \- Banda):**
+**Extra (Pro \- Artista):**
 
 * Postulaciones ilimitadas
 * Notificaciones push de nuevos eventos
@@ -119,8 +119,8 @@ La plataforma permite que los contratantes publiquen sus necesidades con informa
 **MVP:**
 
 * Notificación por email cuando:
-    * Banda postula (aviso a contratante)
-    * Banda es seleccionada (email invitando a contactar al contratante)
+    * Artista postula (aviso a contratante)
+    * Artista es seleccionado (email invitando a contactar al contratante)
 * Información de contacto visible en perfiles
 
 **Extra (Pro):**
@@ -132,7 +132,7 @@ La plataforma permite que los contratantes publiquen sus necesidades con informa
 
 **MVP:**
 
-* Los pagos de presentaciones se coordinan directamente entre banda y contratante
+* Los pagos de presentaciones se coordinan directamente entre artista y contratante
 * GigHub NO procesa estos pagos
 
 **Extra:**
@@ -143,7 +143,7 @@ La plataforma permite que los contratantes publiquen sus necesidades con informa
 
 **MVP:**
 
-* Dashboard para bandas (eventos disponibles)
+* Dashboard para artistas (eventos disponibles)
 * Dashboard para contratantes (sus publicaciones)
 * Búsqueda por género y fecha
 
@@ -160,7 +160,7 @@ La plataforma permite que los contratantes publiquen sus necesidades con informa
 * Ve todas las postulaciones
 * Ideal para: personas con eventos únicos (cumpleaños, bodas)
 
-**Banda Free:**
+**Artista Free:**
 
 * 5 postulaciones al mes
 * Perfil básico (1 video YouTube)
@@ -169,7 +169,7 @@ La plataforma permite que los contratantes publiquen sus necesidades con informa
 
 #### **Membresías Pro (Única fuente de ingresos):**
 
-### **Banda Pro \- $15/mes**
+### **Artista Pro \- $15/mes**
 
 * Postulaciones ILIMITADAS
 * 5 videos de YouTube en perfil
@@ -177,15 +177,15 @@ La plataforma permite que los contratantes publiquen sus necesidades con informa
 * Notificaciones push instantáneas
 * Notificaciones personalizadas de nuevos eventos (por distrito, presupuesto, fecha)
 
-**Target:** Bandas que buscan activamente presentaciones regulares
+**Target:** Artistas que buscan activamente presentaciones regulares
 
-### **Contratante/Venue Pro \- $30/mes**
+### **Contratante Pro \- $30/mes**
 
 * Publicaciones ILIMITADAS
 * Mayor visibilidad automática en sus publicaciones
 * Perfil detallado del establecimiento
 
-**Target:** Venues/bares que contratan bandas regularmente
+**Target:** Contratantes que contratan artistas regularmente
 
 ### **¿Por qué funciona este modelo?**
 
@@ -193,7 +193,7 @@ La plataforma permite que los contratantes publiquen sus necesidades con informa
 
 2. **Usuarios recurrentes sí pagan:**
 
-    * Venues que necesitan bandas cada semana → Pro
-    * Bandas que buscan tocar regularmente → Pro
-3. **Las bandas NECESITAN el Pro:** Con solo 5 postulaciones/mes, las bandas activas se quedan cortas rápidamente
+    * Contratantes que necesitan artistas cada semana → Pro
+    * Artistas que buscan tocar regularmente → Pro
+3. **Los artistas NECESITAN el Pro:** Con solo 5 postulaciones/mes, los artistas activos se quedan cortos rápidamente
 

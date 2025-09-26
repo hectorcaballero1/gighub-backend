@@ -1,10 +1,7 @@
 package org.example.gighub.user.domain;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
@@ -52,6 +49,17 @@ public abstract class User {
     @NotNull(message = "Created at is required")
     @Column(name = "created_at", nullable = false)
     private LocalDateTime createdAt;
+
+    @NotNull(message = "Rating average is required")
+    @DecimalMin(value = "0.0", message = "Rating average must be at least 0.0")
+    @DecimalMax(value = "5.0", message = "Rating average must not exceed 5.0")
+    @Column(name = "rating_average", nullable = false, precision = 2, scale = 1)
+    private Double ratingAverage = 0.0;
+
+    @NotNull(message = "Rating count is required")
+    @Min(value = 0, message = "Rating count must be at least 0")
+    @Column(name = "rating_count", nullable = false)
+    private Integer ratingCount = 0;
 
     @PrePersist
     protected void onCreate() {
